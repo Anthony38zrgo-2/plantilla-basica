@@ -1,7 +1,7 @@
 <script setup>
-import { useWhatsApp } from '@/composables/useWhatsApp'
+import { useWhatsApp } from "@/composables/useWhatsApp";
 
-const { whatsappUrl } = useWhatsApp()
+const { whatsappUrl } = useWhatsApp();
 </script>
 
 <template>
@@ -11,18 +11,7 @@ const { whatsappUrl } = useWhatsApp()
     rel="noopener noreferrer"
     aria-label="Contactar por WhatsApp"
     title="Contactar por WhatsApp"
-    class="
-      fixed bottom-5 right-5 z-50
-      flex h-14 w-14 items-center justify-center
-      rounded-full bg-green-500 text-white
-      shadow-lg
-      transition duration-200
-      hover:scale-110 hover:bg-green-600
-      focus-visible:outline-2
-      focus-visible:outline-offset-2
-      focus-visible:outline-green-600
-      sm:bottom-7 sm:right-7
-    "
+    class="fixed bottom-5 right-5 z-[9999] flex h-14 w-14 items-center justify-center rounded-full bg-green-500 text-white shadow-[0_8px_24px_rgba(0,0,0,0.28)] transition duration-200 hover:scale-110 hover:bg-green-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600 sm:bottom-7 sm:right-7"
   >
     <svg
       class="h-7 w-7"

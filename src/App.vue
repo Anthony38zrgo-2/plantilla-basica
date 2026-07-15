@@ -5,6 +5,7 @@ import HeroSection from "@/components/sections/HeroSection.vue";
 import AboutSection from "@/components/sections/AboutSection.vue";
 import ServicesSection from "@/components/sections/ServicesSection.vue";
 import ContactSection from "@/components/sections/ContactSection.vue";
+import WhatsAppButton from "./components/ui/WhatsAppButton.vue";
 </script>
 
 <template>
@@ -19,5 +20,6 @@ import ContactSection from "@/components/sections/ContactSection.vue";
     </main>
 
     <AppFooter />
+    <WhatsAppButton />
   </div>
 </template>

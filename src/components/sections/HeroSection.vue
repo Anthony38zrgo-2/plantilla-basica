@@ -1,6 +1,5 @@
 <script setup>
 import { COMPANY_INFO } from "@/constants/company";
-import WhatsAppButton from "@/components/ui/WhatsAppButton.vue";
 import heroBanner from "@/assets/images/banner.png";
 </script>
 
@@ -68,8 +67,6 @@ import heroBanner from "@/assets/images/banner.png";
           <div
             class="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row lg:justify-start"
           >
-            <WhatsAppButton />
-
             <a
               href="#services"
               class="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-6 py-3 text-sm font-bold text-white backdrop-blur-sm transition hover:-translate-y-0.5 hover:border-pink-400/50 hover:bg-white/10 hover:text-pink-300"
