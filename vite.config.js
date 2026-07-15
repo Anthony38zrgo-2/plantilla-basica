@@ -1,16 +1,21 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import tailwindcss from '@tailwindcss/vite'
+import { fileURLToPath, URL } from 'node:url'
 
-export default defineConfig({
-  base: '/plantilla-basica/',
+export default defineConfig(({ command }) => ({
+  base: command === 'build'
+    ? '/plantilla-basica/'
+    : '/',
+
   plugins: [
     vue(),
     tailwindcss(),
   ],
+
   resolve: {
     alias: {
-      '@': '/src',
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
-})
+}))
