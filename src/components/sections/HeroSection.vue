@@ -35,7 +35,7 @@ import heroBanner from "@/assets/images/banner.png";
               rocket_launch
             </span>
 
-            Soluciones digitales para tu negocio
+            Convierte conversaciones en ventas!
           </div>
 
           <h1
@@ -105,12 +105,8 @@ import heroBanner from "@/assets/images/banner.png";
 
       <!-- Beneficios -->
       <div class="mt-20 grid w-full grid-cols-1 gap-4 sm:grid-cols-3 lg:mt-16">
-        <div
-          class="group hero-benefit-secondary"
-        >
-          <div
-            class="hero-benefit-icon bg-pink-500 shadow-pink-950/20"
-          >
+        <div class="group hero-benefit-secondary">
+          <div class="hero-benefit-icon bg-pink-500 shadow-pink-950/20">
             <span class="material-symbols-outlined text-2xl"> chat </span>
           </div>
 
@@ -123,12 +119,8 @@ import heroBanner from "@/assets/images/banner.png";
           </div>
         </div>
 
-        <div
-          class="group hero-benefit-accent"
-        >
-          <div
-            class="hero-benefit-icon bg-blue-600 shadow-blue-950/20"
-          >
+        <div class="group hero-benefit-accent">
+          <div class="hero-benefit-icon bg-blue-600 shadow-blue-950/20">
             <span class="material-symbols-outlined text-2xl">
               design_services
             </span>
@@ -143,12 +135,8 @@ import heroBanner from "@/assets/images/banner.png";
           </div>
         </div>
 
-        <div
-          class="group hero-benefit-secondary"
-        >
-          <div
-            class="hero-benefit-icon bg-pink-500 shadow-pink-950/20"
-          >
+        <div class="group hero-benefit-secondary">
+          <div class="hero-benefit-icon bg-pink-500 shadow-pink-950/20">
             <span class="material-symbols-outlined text-2xl"> devices </span>
           </div>
 

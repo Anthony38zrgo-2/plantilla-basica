@@ -6,9 +6,7 @@ import { COMPANY_INFO } from "@/constants/company";
   <header
     class="sticky top-0 z-50 border-b border-blue-900 bg-blue-950/95 shadow-sm backdrop-blur-md"
   >
-    <div
-      class="page-container flex h-16 items-center justify-between"
-    >
+    <div class="page-container flex h-16 items-center justify-between">
       <!-- Marca -->
       <a
         href="#hero"
@@ -16,15 +14,13 @@ import { COMPANY_INFO } from "@/constants/company";
         :aria-label="`Ir al inicio de ${COMPANY_INFO.name}`"
       >
         <div
-          class="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-lg font-black text-pink-500 shadow-md shadow-blue-950/40 transition hover:scale-105 hover:bg-pink-50"
+          class="flex h-10 w-10 items-center justify-center rounded-xl text-white text-lg font-black bg-pink-500 shadow-md shadow-blue-950/40 transition hover:scale-105 hover:bg-pink-50"
         >
           ED
         </div>
 
         <div class="flex flex-col leading-none">
-          <span
-            class="text-xl font-black tracking-tight text-white sm:text-2xl"
-          >
+          <span class="text-xl font-bold tracking-tight text-white sm:text-2xl">
             {{ COMPANY_INFO.name }}
           </span>
 
@@ -41,26 +37,11 @@ import { COMPANY_INFO } from "@/constants/company";
         class="hidden items-center gap-2 md:flex"
         aria-label="Navegación principal"
       >
-        <a
-          href="#hero"
-          class="nav-link"
-        >
-          Inicio
-        </a>
+        <a href="#hero" class="nav-link"> Inicio </a>
 
-        <a
-          href="#about"
-          class="nav-link"
-        >
-          Nosotros
-        </a>
+        <a href="#about" class="nav-link"> Nosotros </a>
 
-        <a
-          href="#services"
-          class="nav-link"
-        >
-          Servicios
-        </a>
+        <a href="#services" class="nav-link"> Servicios </a>
 
         <a
           href="#contact"
