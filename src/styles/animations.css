@@ -1,0 +1,85 @@
+@keyframes brand-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes brand-saturation {
+  0%,
+  100% {
+    filter: saturate(1.08);
+  }
+
+  50% {
+    filter: saturate(1.22);
+  }
+}
+
+.animate-brand-float {
+  animation: brand-float 6s ease-in-out infinite;
+}
+
+.animate-brand-saturation {
+  animation: brand-saturation 5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-brand-float,
+  .animate-brand-saturation {
+    animation: none;
+  }
+}
+
+@keyframes hero-banner-float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-7px) rotate(0.25deg); }
+}
+
+@keyframes hero-banner-saturation {
+  0%, 100% { filter: saturate(1.1) contrast(1); transform: scale(1); }
+  50% { filter: saturate(1.28) contrast(1.02); transform: scale(1.012); }
+}
+
+@keyframes hero-banner-glow {
+  0%, 100% { opacity: 0.45; transform: scale(0.98); }
+  50% { opacity: 0.85; transform: scale(1.04); }
+}
+
+@keyframes hero-banner-shine {
+  0% { transform: translateX(-220%) skewX(-18deg); opacity: 0; }
+  10% { opacity: 1; }
+  45% { transform: translateX(420%) skewX(-18deg); opacity: 1; }
+  55%, 100% { transform: translateX(420%) skewX(-18deg); opacity: 0; }
+}
+
+.hero-banner { animation: hero-banner-float 6s ease-in-out infinite; will-change: transform; }
+.hero-banner__frame { transform: translateZ(0); }
+.hero-banner__image { animation: hero-banner-saturation 5s ease-in-out infinite; will-change: filter, transform; }
+.hero-banner__glow { animation: hero-banner-glow 5s ease-in-out infinite; will-change: opacity, transform; }
+.hero-banner__shine {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 35%;
+  background: linear-gradient(90deg, transparent, rgb(255 255 255 / 0.12), transparent);
+  animation: hero-banner-shine 7s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+.hero-banner:hover { animation-play-state: paused; transform: translateY(-5px); }
+.hero-banner:hover .hero-banner__image {
+  animation-play-state: paused;
+  filter: saturate(1.3) contrast(1.03);
+  transform: scale(1.018);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-banner, .hero-banner__image, .hero-banner__glow, .hero-banner__shine { animation: none; }
+  .hero-banner__image { filter: saturate(1.15); transform: none; }
+  .hero-banner:hover { transform: none; }
+}

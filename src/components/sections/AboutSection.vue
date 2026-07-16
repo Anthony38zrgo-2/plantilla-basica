@@ -4,7 +4,7 @@ import { COMPANY_INFO } from "@/constants/company";
 
 <template>
   <section id="about" class="bg-pink-50 py-16 sm:py-20">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="page-container">
       <div
         class="grid items-center gap-10 rounded-[2rem] border border-pink-100 bg-white px-6 py-8 shadow-sm sm:px-10 sm:py-12 lg:grid-cols-[1.1fr_0.9fr]"
       >
@@ -41,7 +41,7 @@ import { COMPANY_INFO } from "@/constants/company";
 
           <div class="mt-7 flex flex-wrap gap-3">
             <span
-              class="inline-flex items-center gap-2 rounded-full border border-blue-100 bg-blue-50 px-4 py-2 text-sm font-bold text-blue-950"
+              class="benefit-badge-accent"
             >
               <span class="material-symbols-outlined text-lg text-blue-600">
                 check_circle
@@ -50,7 +50,7 @@ import { COMPANY_INFO } from "@/constants/company";
             </span>
 
             <span
-              class="inline-flex items-center gap-2 rounded-full border border-pink-100 bg-pink-50 px-4 py-2 text-sm font-bold text-blue-950"
+              class="benefit-badge-secondary"
             >
               <span class="material-symbols-outlined text-lg text-pink-500">
                 check_circle
@@ -59,7 +59,7 @@ import { COMPANY_INFO } from "@/constants/company";
             </span>
 
             <span
-              class="inline-flex items-center gap-2 rounded-full border border-blue-100 bg-blue-50 px-4 py-2 text-sm font-bold text-blue-950"
+              class="benefit-badge-accent"
             >
               <span class="material-symbols-outlined text-lg text-blue-600">
                 check_circle

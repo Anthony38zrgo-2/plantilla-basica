@@ -3,9 +3,9 @@
     id="services"
     class="relative z-10 bg-slate-900 py-16 shadow-[0_24px_48px_-16px_rgba(2,6,23,0.8)] sm:py-20"
   >
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="page-container">
       <!-- Encabezado -->
-      <div class="mx-auto max-w-3xl text-center">
+      <div class="section-header">
         <span
           class="text-xs font-bold uppercase tracking-[0.2em] text-pink-300"
         >
@@ -32,7 +32,7 @@
       <div class="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
         <!-- WhatsApp Business -->
         <article
-          class="group flex h-full flex-col rounded-3xl border border-pink-200 bg-pink-50 p-7 text-blue-950 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-pink-300 hover:shadow-xl"
+          class="group service-card-secondary"
         >
           <div
             class="flex h-14 w-14 items-center justify-center rounded-2xl bg-pink-500 text-white shadow-sm"
@@ -46,16 +46,16 @@
             Atención al cliente
           </p>
 
-          <h3 class="mt-2 text-2xl font-black leading-tight">
+          <h3 class="service-title">
             WhatsApp Business con IA
           </h3>
 
-          <p class="mt-4 text-sm leading-6 text-slate-600">
+          <p class="service-description">
             Organiza las consultas de tus clientes y brinda respuestas más
             rápidas, claras y profesionales.
           </p>
 
-          <ul class="mt-6 space-y-3 text-sm text-slate-700">
+          <ul class="feature-list text-slate-700">
             <li class="flex items-start gap-2">
               <span
                 class="material-symbols-outlined mt-0.5 text-lg text-pink-600"
@@ -86,7 +86,7 @@
 
           <a
             href="#contact"
-            class="mt-auto inline-flex w-fit items-center gap-2 pt-8 text-sm font-bold text-pink-700 transition hover:gap-3 hover:text-blue-950"
+            class="service-link text-pink-700"
           >
             Consultar servicio
             <span class="material-symbols-outlined text-lg">
@@ -97,7 +97,7 @@
 
         <!-- Página web -->
         <article
-          class="group flex h-full flex-col rounded-3xl border border-blue-200 bg-blue-50 p-7 text-blue-950 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-blue-300 hover:shadow-xl"
+          class="group service-card-accent"
         >
           <div
             class="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-600 text-white shadow-sm"
@@ -111,16 +111,16 @@
             Presencia digital
           </p>
 
-          <h3 class="mt-2 text-2xl font-black leading-tight">
+          <h3 class="service-title">
             Página web con código QR
           </h3>
 
-          <p class="mt-4 text-sm leading-6 text-slate-600">
+          <p class="service-description">
             Presenta tu negocio en una página moderna, rápida y preparada para
             verse correctamente desde celulares.
           </p>
 
-          <ul class="mt-6 space-y-3 text-sm text-slate-700">
+          <ul class="feature-list text-slate-700">
             <li class="flex items-start gap-2">
               <span
                 class="material-symbols-outlined mt-0.5 text-lg text-blue-700"
@@ -151,7 +151,7 @@
 
           <a
             href="#contact"
-            class="mt-auto inline-flex w-fit items-center gap-2 pt-8 text-sm font-bold text-blue-700 transition hover:gap-3 hover:text-blue-950"
+            class="service-link text-blue-700"
           >
             Consultar servicio
             <span class="material-symbols-outlined text-lg">
@@ -162,7 +162,7 @@
 
         <!-- Catálogo virtual -->
         <article
-          class="group flex h-full flex-col rounded-3xl border border-violet-200 bg-violet-50 p-7 text-blue-950 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-violet-300 hover:shadow-xl"
+          class="group service-card-tertiary"
         >
           <div
             class="flex h-14 w-14 items-center justify-center rounded-2xl bg-violet-600 text-white shadow-sm"
@@ -178,16 +178,16 @@
             Productos y presentación
           </p>
 
-          <h3 class="mt-2 text-2xl font-black leading-tight">
+          <h3 class="service-title">
             Catálogo virtual e imágenes
           </h3>
 
-          <p class="mt-4 text-sm leading-6 text-slate-600">
+          <p class="service-description">
             Exhibe tus productos de forma ordenada y atractiva mediante un
             catálogo fácil de consultar y compartir.
           </p>
 
-          <ul class="mt-6 space-y-3 text-sm text-slate-700">
+          <ul class="feature-list text-slate-700">
             <li class="flex items-start gap-2">
               <span
                 class="material-symbols-outlined mt-0.5 text-lg text-violet-700"
@@ -218,7 +218,7 @@
 
           <a
             href="#contact"
-            class="mt-auto inline-flex w-fit items-center gap-2 pt-8 text-sm font-bold text-violet-700 transition hover:gap-3 hover:text-blue-950"
+            class="service-link text-violet-700"
           >
             Consultar servicio
             <span class="material-symbols-outlined text-lg">

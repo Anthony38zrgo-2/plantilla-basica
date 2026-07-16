@@ -9,7 +9,7 @@ import WhatsAppButton from "./components/ui/WhatsAppButton.vue";
 </script>
 
 <template>
-  <div class="min-h-screen bg-white text-gray-800">
+  <div class="page-shell">
     <AppHeader />
 
     <main>

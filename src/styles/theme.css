@@ -1,0 +1,47 @@
+@theme {
+  --font-sans: "Inter", "Segoe UI", Arial, sans-serif;
+  /* Colores de marca */
+  --color-brand-primary: #172554;
+  --color-brand-primary-soft: #dbeafe;
+
+  --color-brand-secondary: #ec4899;
+  --color-brand-secondary-soft: #fce7f3;
+
+  --color-brand-accent: #2563eb;
+  --color-brand-accent-soft: #dbeafe;
+
+  /* Superficies */
+  --color-surface-page: #f8fafc;
+  --color-surface-card: #ffffff;
+  --color-surface-dark: #0f172a;
+  --color-surface-muted: #f1f5f9;
+
+  /* Texto */
+  --color-text-primary: #172554;
+  --color-text-body: #1f2937;
+  --color-text-secondary: #475569;
+  --color-text-light: #ffffff;
+  --color-text-muted: #94a3b8;
+
+  /* Estados */
+  --color-success: #22c55e;
+  --color-success-hover: #16a34a;
+
+  /* Bordes */
+  --color-border-light: #e2e8f0;
+  --color-border-brand: #fbcfe8;
+
+  /* Radios */
+  --radius-card: 1.5rem;
+  --radius-button: 9999px;
+  --radius-control: 0.75rem;
+
+  /* Sombras */
+  --shadow-card: 0 10px 30px -14px rgb(15 23 42 / 0.18);
+  --shadow-card-hover: 0 20px 40px -18px rgb(15 23 42 / 0.3);
+  --shadow-section: 0 24px 48px -16px rgb(2 6 23 / 0.7);
+  --shadow-floating-action: 0 8px 24px rgb(0 0 0 / 0.28);
+
+  /* Animaciones */
+  --ease-brand: cubic-bezier(0.22, 1, 0.36, 1);
+}

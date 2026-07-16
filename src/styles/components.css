@@ -1,0 +1,156 @@
+@layer components {
+  /* Contenedores */
+  .page-container {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-spacing {
+    @apply py-16 sm:py-20 lg:py-24;
+  }
+
+  .page-shell { @apply min-h-screen bg-white text-gray-800; }
+  .section-container { @apply relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8; }
+
+  /* Encabezados de sección */
+  .section-header {
+    @apply mx-auto max-w-3xl text-center;
+  }
+
+  .section-eyebrow {
+    @apply text-xs font-bold uppercase tracking-[0.2em]
+      text-brand-secondary;
+  }
+
+  .section-title {
+    @apply mt-3 text-3xl font-black tracking-tight
+      text-text-primary sm:text-4xl md:text-5xl;
+  }
+
+  .section-description {
+    @apply mx-auto mt-5 max-w-2xl text-base leading-7
+      text-text-secondary sm:text-lg;
+  }
+
+  /* Botones */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2
+      rounded-button px-6 py-3 text-sm font-bold
+      transition duration-300;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-button px-6 py-3 text-sm font-bold transition duration-300 bg-brand-secondary text-white
+      shadow-md hover:-translate-y-0.5
+      hover:brightness-95 hover:shadow-lg;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-button px-6 py-3 text-sm font-bold transition duration-300 bg-brand-accent text-white
+      shadow-md hover:-translate-y-0.5
+      hover:brightness-95 hover:shadow-lg;
+  }
+
+  .btn-outline-dark {
+    @apply inline-flex items-center justify-center gap-2 rounded-button px-6 py-3 text-sm font-bold transition duration-300 border border-white/20 bg-white/5 text-white
+      hover:-translate-y-0.5 hover:border-brand-secondary
+      hover:bg-white/10 hover:text-brand-secondary-soft;
+  }
+
+  .btn-outline { @apply inline-flex items-center justify-center gap-2 rounded-button border border-white/20 bg-white/5 px-6 py-3 text-sm font-bold text-white backdrop-blur-sm transition duration-300 hover:-translate-y-0.5 hover:border-brand-secondary hover:bg-white/10 hover:text-brand-secondary-soft; }
+  .btn-light { @apply rounded-button bg-white text-brand-secondary transition hover:bg-pink-50; }
+
+  .btn-link {
+    @apply inline-flex items-center gap-2 text-sm font-bold
+      text-brand-secondary transition hover:gap-3
+      hover:text-text-primary;
+  }
+
+  /* Tarjetas */
+  .card {
+    @apply rounded-card border border-border-light
+      bg-surface-card p-7 shadow-card;
+  }
+
+  .card-interactive {
+    @apply rounded-card border border-border-light bg-surface-card p-7 shadow-card transition duration-300
+      hover:-translate-y-1 hover:shadow-card-hover;
+  }
+
+  /* Iconos */
+  .icon-box {
+    @apply flex h-14 w-14 shrink-0 items-center justify-center
+      rounded-2xl;
+  }
+
+  .icon-box-primary {
+    @apply flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-brand-primary text-white;
+  }
+
+  .icon-box-secondary {
+    @apply flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-brand-secondary text-white;
+  }
+
+  .icon-box-accent {
+    @apply flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-brand-accent text-white;
+  }
+
+  /* Etiquetas */
+  .badge {
+    @apply inline-flex items-center gap-2 rounded-button
+      px-4 py-2 text-xs font-bold uppercase tracking-[0.18em];
+  }
+
+  .badge-secondary {
+    @apply inline-flex items-center gap-2 rounded-button px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] bg-brand-secondary-soft text-brand-secondary;
+  }
+
+  .badge-dark {
+    @apply inline-flex items-center gap-2 rounded-button px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] bg-brand-primary text-white;
+  }
+
+  /* Listas */
+  .feature-list {
+    @apply mt-6 space-y-3 text-sm text-text-secondary;
+  }
+
+  .feature-item {
+    @apply flex items-start gap-2;
+  }
+
+  .feature-icon {
+    @apply mt-0.5 text-lg text-brand-secondary;
+  }
+
+  .nav-link { @apply rounded-lg px-3 py-2 text-sm font-semibold text-white transition hover:bg-white/10 hover:text-pink-300; }
+  .footer-link { @apply transition hover:text-white; }
+
+  .service-card { @apply flex h-full flex-col rounded-3xl border p-7 text-blue-950 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl; }
+  .service-card-secondary { @apply flex h-full flex-col rounded-3xl border border-pink-200 bg-pink-50 p-7 text-blue-950 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-pink-300 hover:shadow-xl; }
+  .service-card-accent { @apply flex h-full flex-col rounded-3xl border border-blue-200 bg-blue-50 p-7 text-blue-950 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-blue-300 hover:shadow-xl; }
+  .service-card-tertiary { @apply flex h-full flex-col rounded-3xl border border-violet-200 bg-violet-50 p-7 text-blue-950 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-violet-300 hover:shadow-xl; }
+  .service-title { @apply mt-2 text-2xl font-black leading-tight; }
+  .service-description { @apply mt-4 text-sm leading-6 text-slate-600; }
+  .service-link { @apply mt-auto inline-flex w-fit items-center gap-2 pt-8 text-sm font-bold text-brand-secondary transition hover:gap-3 hover:text-text-primary; }
+
+  .hero-benefit { @apply flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 px-5 py-5 text-left backdrop-blur-sm transition hover:-translate-y-1 hover:bg-white/10; }
+  .hero-benefit-secondary { @apply flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 px-5 py-5 text-left backdrop-blur-sm transition hover:-translate-y-1 hover:border-pink-400/40 hover:bg-white/10; }
+  .hero-benefit-accent { @apply flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 px-5 py-5 text-left backdrop-blur-sm transition hover:-translate-y-1 hover:border-blue-400/40 hover:bg-white/10; }
+  .hero-benefit-icon { @apply flex h-12 w-12 shrink-0 items-center justify-center rounded-xl text-white shadow-md; }
+
+  .contact-option { @apply rounded-2xl border p-5 transition hover:-translate-y-0.5 hover:shadow-md; }
+  .contact-option-secondary { @apply rounded-2xl border border-pink-100 bg-pink-50 p-5 transition hover:-translate-y-0.5 hover:border-pink-300 hover:shadow-md; }
+  .contact-option-accent { @apply min-w-0 rounded-2xl border border-blue-100 bg-blue-50 p-5 transition hover:-translate-y-0.5 hover:border-blue-300 hover:shadow-md; }
+  .contact-option-icon { @apply flex h-11 w-11 items-center justify-center rounded-xl text-white; }
+  .contact-option-label { @apply mt-5 text-xs font-bold uppercase tracking-[0.16em]; }
+  .contact-option-description { @apply mt-2 text-xs leading-5 text-slate-500; }
+  .contact-option-link { @apply mt-4 inline-flex items-center gap-1 text-sm font-bold transition group-hover:gap-2; }
+
+  .benefit-badge { @apply inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-bold text-blue-950; }
+  .benefit-badge-secondary { @apply inline-flex items-center gap-2 rounded-full border border-pink-100 bg-pink-50 px-4 py-2 text-sm font-bold text-blue-950; }
+  .benefit-badge-accent { @apply inline-flex items-center gap-2 rounded-full border border-blue-100 bg-blue-50 px-4 py-2 text-sm font-bold text-blue-950; }
+
+  .decorative-stripe { @apply absolute inset-x-0 bottom-0 flex h-1; }
+  .dot-pattern { background-image: radial-gradient(circle at center, white 1px, transparent 1px); background-size: 28px 28px; }
+
+  .whatsapp-floating-button { @apply fixed bottom-5 right-5 z-[9999] flex h-14 w-14 items-center justify-center rounded-full bg-green-500 text-white shadow-floating-action transition duration-200 hover:scale-110 hover:bg-green-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600 sm:bottom-7 sm:right-7; }
+}

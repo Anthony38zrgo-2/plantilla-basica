@@ -16,18 +16,10 @@ import WhatsAppButton from "@/components/ui/WhatsAppButton.vue";
       class="pointer-events-none absolute -right-28 top-0 h-80 w-80 rounded-full bg-pink-500/20 blur-3xl"
     ></div>
     <div
-      class="pointer-events-none absolute inset-0 opacity-[0.05]"
-      style="
-        background-image: radial-gradient(
-          circle at center,
-          white 1px,
-          transparent 1px
-        );
-        background-size: 28px 28px;
-      "
+      class="dot-pattern pointer-events-none absolute inset-0 opacity-[0.05]"
     ></div>
 
-    <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="section-container">
       <div class="grid items-center gap-10 lg:grid-cols-[1fr_0.9fr] lg:gap-16">
         <!-- Mensaje principal -->
         <div class="text-center lg:text-left">
@@ -79,16 +71,16 @@ import WhatsAppButton from "@/components/ui/WhatsAppButton.vue";
             <!-- Teléfono -->
             <a
               :href="`tel:${COMPANY_INFO.phone.replace(/\s/g, '')}`"
-              class="group rounded-2xl border border-pink-100 bg-pink-50 p-5 transition hover:-translate-y-0.5 hover:border-pink-300 hover:shadow-md"
+              class="group contact-option-secondary"
             >
               <div
-                class="flex h-11 w-11 items-center justify-center rounded-xl bg-pink-500 text-white"
+                class="contact-option-icon bg-pink-500"
               >
                 <span class="material-symbols-outlined text-2xl"> call </span>
               </div>
 
               <p
-                class="mt-5 text-xs font-bold uppercase tracking-[0.16em] text-pink-600"
+                class="contact-option-label text-pink-600"
               >
                 Teléfono
               </p>
@@ -103,12 +95,12 @@ import WhatsAppButton from "@/components/ui/WhatsAppButton.vue";
                 }}
               </p>
 
-              <p class="mt-2 text-xs leading-5 text-slate-500">
+              <p class="contact-option-description">
                 Atención directa para consultas sobre nuestros servicios.
               </p>
 
               <span
-                class="mt-4 inline-flex items-center gap-1 text-sm font-bold text-pink-700 transition group-hover:gap-2"
+                class="contact-option-link text-pink-700"
               >
                 Llamar ahora
 
@@ -121,16 +113,16 @@ import WhatsAppButton from "@/components/ui/WhatsAppButton.vue";
             <!-- Correo -->
             <a
               :href="`mailto:${COMPANY_INFO.email}`"
-              class="group min-w-0 rounded-2xl border border-blue-100 bg-blue-50 p-5 transition hover:-translate-y-0.5 hover:border-blue-300 hover:shadow-md"
+              class="group contact-option-accent"
             >
               <div
-                class="flex h-11 w-11 items-center justify-center rounded-xl bg-blue-600 text-white"
+                class="contact-option-icon bg-blue-600"
               >
                 <span class="material-symbols-outlined text-2xl"> mail </span>
               </div>
 
               <p
-                class="mt-5 text-xs font-bold uppercase tracking-[0.16em] text-blue-700"
+                class="contact-option-label text-blue-700"
               >
                 Correo
               </p>
@@ -141,12 +133,12 @@ import WhatsAppButton from "@/components/ui/WhatsAppButton.vue";
                 {{ COMPANY_INFO.email }}
               </p>
 
-              <p class="mt-2 text-xs leading-5 text-slate-500">
+              <p class="contact-option-description">
                 Envíanos los detalles de tu proyecto o una consulta comercial.
               </p>
 
               <span
-                class="mt-4 inline-flex items-center gap-1 text-sm font-bold text-blue-700 transition group-hover:gap-2"
+                class="contact-option-link text-blue-700"
               >
                 Enviar correo
 

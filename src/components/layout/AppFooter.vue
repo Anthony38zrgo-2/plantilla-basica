@@ -5,7 +5,7 @@ import { COMPANY_INFO } from "@/constants/company";
 <template>
   <footer class="border-t border-slate-800 bg-slate-950 py-12">
     <div
-      class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-8 px-4 sm:px-6 md:flex-row lg:px-8"
+      class="page-container flex flex-col items-center justify-between gap-8 md:flex-row"
     >
       <div class="max-w-xl text-center md:text-left">
         <p class="text-lg font-black text-white">
@@ -27,7 +27,7 @@ import { COMPANY_INFO } from "@/constants/company";
         >
           <a
             :href="`mailto:${COMPANY_INFO.email}`"
-            class="transition hover:text-white"
+            class="footer-link"
           >
             {{ COMPANY_INFO.email }}
           </a>
@@ -36,7 +36,7 @@ import { COMPANY_INFO } from "@/constants/company";
 
           <a
             :href="`tel:${COMPANY_INFO.phone.replace(/\s/g, '')}`"
-            class="transition hover:text-white"
+            class="footer-link"
           >
             {{ COMPANY_INFO.phone }}
           </a>
