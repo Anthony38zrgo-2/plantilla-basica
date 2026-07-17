@@ -152,5 +152,5 @@
   .decorative-stripe { @apply absolute inset-x-0 bottom-0 flex h-1; }
   .dot-pattern { background-image: radial-gradient(circle at center, white 1px, transparent 1px); background-size: 28px 28px; }
 
-  .whatsapp-floating-button { @apply fixed bottom-5 right-5 z-[9999] flex h-14 w-14 items-center justify-center rounded-full bg-green-500 text-white shadow-floating-action transition duration-200 hover:scale-110 hover:bg-green-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600 sm:bottom-7 sm:right-7; }
+  .whatsapp-floating-button { @apply flex h-14 w-14 items-center justify-center rounded-full bg-green-500 text-white shadow-floating-action transition duration-200 hover:scale-110 hover:bg-green-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600; }
 }

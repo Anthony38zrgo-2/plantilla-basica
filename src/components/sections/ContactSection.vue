@@ -1,6 +1,5 @@
 <script setup>
 import { COMPANY_INFO } from "@/constants/company";
-import WhatsAppButton from "@/components/ui/WhatsAppButton.vue";
 </script>
 
 <template>
